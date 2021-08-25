@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="header__navbar-element logo">
+                    <img src="../assets/images/logo.png" alt="logo">
+                    <img src=../assets/images/logo_adaptive.svg alt="logo_adaptive" class="logo_adaptive">
+                </div>
+                <div class="header__navbar-element header__navbar-block_links">
+                    <div>
+                        <a href="/" class="header__navbar-link">Главная</a>
+                    </div>
+                    <div>
+                        <a href="/" class="header__navbar-link">Топ игроков</a>
+                    </div>
+                    <div>
+                        <a href="/" class="header__navbar-link">Новости</a>
+                    </div>
+                    <div>
+                        <a href="/" class="header__navbar-link">Лаунчер</a>
+                    </div>
+                </div>
+                <div class="header__navbar-element header__navbar-cabinet button">
+                    <i class="fas fa-user header__navbar-icon"></i>
+                    Личный кабинет
+                </div>
+
+                <div class="header__navbar-element header__adaptive">
+                    <div class="header__adaptive-burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script>
+        const burger = document.querySelector('.header__adaptive-burger');
+        const header = document.querySelector('header');
+        burger.addEventListener('click', () => {
+            header.classList.toggle('header__adaptive-active');
+        })
+    </script>
+</body>
+
+</html>

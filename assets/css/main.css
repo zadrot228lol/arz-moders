@@ -293,7 +293,12 @@ body {
   font-family: "PF DinDisplay Pro Regular";
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "PF DinDisplay Pro Medium";
   margin: 0;
   padding: 0;
@@ -342,21 +347,20 @@ header .header__navbar-element.logo img {
 }
 
 .button {
+  display: flex;
   font-family: "PF DinDisplay Pro Medium";
-  padding: 20px 40px;
-  border-radius: 15px;
+  padding: 23px 32px;
   cursor: pointer;
-  background: #5c97ff;
   color: white;
-  font-size: 18px;
-  text-align: center;
+  font-size: 20px;
+  text-align: center !important;
   transition: all 0.5s;
-  background: linear-gradient(97.14deg, #5c97ff 22.51%, rgba(92, 151, 255, 0.9) 51.04%);
+  background: linear-gradient(94.38deg, #5c97ff 16.59%, #5c97ff 16.59%, #5c97ff 16.6%, rgba(92, 151, 255, 0.78) 77.05%);
+  box-shadow: -9px 9px 35px rgba(92, 151, 255, 0.3);
+  border-radius: 23px;
 }
 .button:hover {
-  -webkit-box-shadow: 4px 4px 18px 12px rgba(92, 151, 255, 0.2);
-  -moz-box-shadow: 4px 4px 18px 12px rgba(92, 151, 255, 0.2);
-  box-shadow: 4px 4px 18px 12px rgba(92, 151, 255, 0.2);
+  box-shadow: -9px 9px 35px rgba(92, 151, 255, 0.77);
 }
 .button .header__navbar-icon {
   margin-right: 5px;
@@ -377,16 +381,17 @@ main#main-page .welcome_block .welcome__text .welcome__block-button {
 }
 main#main-page .welcome_block .welcome__image img {
   margin-right: 150px;
-  width: 700px;
+  width: 693px;
 }
 main#main-page section .section__title {
-  font-family: "PF DinDisplay Pro Medium";
-  font-size: 38px;
+  font-family: "PF DinDisplay Pro Regular";
+  font-size: 48px;
 }
 main#main-page section .section__description {
   margin: 0;
   color: #787878;
-  font-size: 18px;
+  font-size: 24px;
+  margin-top: 5px;
 }
 main#main-page section .slider__nav {
   margin-top: 20px;
@@ -498,7 +503,7 @@ main#main-page section.main-page__section-three .launcher__block-nav {
   margin-bottom: 20px;
 }
 main#main-page section.main-page__section-three .launcher__block-nav .launcher__block-nav_pagination {
-  border: 1px solid #ADADAD;
+  border: 1px solid #adadad;
   border-radius: 20px;
   margin-right: 11px;
   cursor: pointer;
@@ -507,7 +512,7 @@ main#main-page section.main-page__section-three .launcher__block-nav .launcher__
 }
 main#main-page section.main-page__section-three .launcher__block-nav .launcher__block-nav_pagination_active {
   cursor: default;
-  background: linear-gradient(164.05deg, #5C97FF 11.11%, rgba(92, 151, 255, 0) 261.39%);
+  background: linear-gradient(164.05deg, #5c97ff 11.11%, rgba(92, 151, 255, 0) 261.39%);
 }
 main#main-page section.main-page__section-three .mobile__launcher__block {
   display: none;
@@ -542,7 +547,7 @@ main#main-page section.main-page__section-three .launcher__block .launcher__bloc
   margin-top: 20px;
 }
 main#main-page section.main-page__section-three .launcher__block .launcher__block-text div.launcher__block-button div.button {
-  width: 100px;
+  width: 120px;
 }
 
 .icon_online {
@@ -553,11 +558,11 @@ main#main-page section.main-page__section-three .launcher__block .launcher__bloc
 }
 
 footer {
-  background: linear-gradient(112.71deg, #5C97FF 10.51%, rgba(92, 151, 255, 0.58) 103.02%);
+  background: linear-gradient(112.71deg, #5c97ff 10.51%, rgba(92, 151, 255, 0.58) 103.02%);
   padding: 30px 0;
   margin-top: 120px;
   font-family: "PF DinDisplay Pro Medium";
-  color: #E3EDFF;
+  color: #e3edff;
 }
 footer .footer__container {
   display: flex;

@@ -10,7 +10,12 @@ body {
     font-family: "PF DinDisplay Pro Regular";
 }
 
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "PF DinDisplay Pro Medium";
     margin: 0;
     padding: 0;
@@ -59,25 +64,29 @@ header {
 }
 
 .button {
+    display: flex;
     font-family: "PF DinDisplay Pro Medium";
-    padding: 20px 40px;
-    border-radius: 15px;
+    padding: 23px 32px;
     cursor: pointer;
-    background: rgb(92, 151, 255);
     color: white;
-    font-size: 18px;
-    text-align: center;
+    font-size: 20px;
+    text-align: center !important;
     transition: all 0.5s;
-    &:hover {
-        -webkit-box-shadow: 4px 4px 18px 12px rgba(92, 151, 255, 0.2);
-        -moz-box-shadow: 4px 4px 18px 12px rgba(92, 151, 255, 0.2);
-        box-shadow: 4px 4px 18px 12px rgba(92, 151, 255, 0.2);
+    background: linear-gradient(
+        94.38deg,
+        #5c97ff 16.59%,
+        #5c97ff 16.59%,
+        #5c97ff 16.6%,
+        rgba(92, 151, 255, 0.78) 77.05%
+    );
+    box-shadow: -9px 9px 35px rgba(92, 151, 255, 0.30);
+    border-radius: 23px;
+    &:hover{
+        box-shadow: -9px 9px 35px rgba(92, 151, 255, 0.77);
     }
     .header__navbar-icon {
         margin-right: 5px;
     }
-    background: linear-gradient(97.14deg, #5c97ff 22.51%, rgba(92, 151, 255, 0.9) 51.04%);
-    // background: linear-gradient(90deg, rgba(92, 151, 255, 1) 0%, rgba(92, 151, 255, 1) 100%);
 }
 
 main#main-page {
@@ -98,20 +107,21 @@ main#main-page {
         .welcome__image {
             img {
                 margin-right: 150px;
-                width: 700px;
+                width: 693px;
             }
         }
     }
 
     section {
         .section__title {
-            font-family: "PF DinDisplay Pro Medium";
-            font-size: 38px;
+            font-family: "PF DinDisplay Pro Regular";
+            font-size: 48px;
         }
         .section__description {
             margin: 0;
             color: #787878;
-            font-size: 18px;
+            font-size: 24px;
+            margin-top: 5px;
         }
         .slider__nav {
             margin-top: 20px;
@@ -215,47 +225,47 @@ main#main-page {
     section.main-page__section-three {
         background: #fff;
         padding: 50px 0;
-        .slider__nav{
+        .slider__nav {
             position: absolute;
             margin-left: 10px;
             margin-top: -5px;
         }
-        .launcher__block-nav{
+        .launcher__block-nav {
             display: flex;
             align-items: center;
             position: absolute;
             margin-left: 80px;
             margin-bottom: 20px;
-            .launcher__block-nav_pagination{
-                border: 1px solid #ADADAD;
+            .launcher__block-nav_pagination {
+                border: 1px solid #adadad;
                 border-radius: 20px;
                 margin-right: 11px;
                 cursor: pointer;
                 width: 15px;
                 height: 15px;
             }
-            .launcher__block-nav_pagination_active{
+            .launcher__block-nav_pagination_active {
                 cursor: default;
-                background: linear-gradient(164.05deg, #5C97FF 11.11%, rgba(92, 151, 255, 0) 261.39%);
+                background: linear-gradient(164.05deg, #5c97ff 11.11%, rgba(92, 151, 255, 0) 261.39%);
             }
         }
 
-        .mobile__launcher__block{
+        .mobile__launcher__block {
             display: none;
             margin: 60px 0;
         }
 
-        .mobile__launcher__block{
+        .mobile__launcher__block {
             text-align: center;
             .mobile__launcher__block-description {
                 margin-top: 4px;
             }
-            .mobile__launcher__block-button{
+            .mobile__launcher__block-button {
                 margin-top: 15px;
             }
         }
-        
-        .launcher__block{
+
+        .launcher__block {
             display: flex;
             align-items: center;
             .launcher__block-image img {
@@ -263,21 +273,20 @@ main#main-page {
                 margin-bottom: -200px;
             }
             .launcher__block-text {
-                display:flex;
+                display: flex;
                 justify-content: end;
                 flex-direction: column;
                 text-align: right;
-                div.launcher__block-button{
+                div.launcher__block-button {
                     display: flex;
                     justify-content: flex-end;
                     margin-top: 20px;
-                    div.button{
-                        width: 100px;
+                    div.button {
+                        width: 120px;
                     }
                 }
             }
         }
-        
     }
 }
 
@@ -288,30 +297,30 @@ main#main-page {
     background: #80d811;
 }
 
-// footer 
+// footer
 footer {
-    background: linear-gradient(112.71deg, #5C97FF 10.51%, rgba(92, 151, 255, 0.58) 103.02%);
+    background: linear-gradient(112.71deg, #5c97ff 10.51%, rgba(92, 151, 255, 0.58) 103.02%);
     padding: 30px 0;
     margin-top: 120px;
     font-family: "PF DinDisplay Pro Medium";
-    color: #E3EDFF;
-    .footer__container{
+    color: #e3edff;
+    .footer__container {
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
-    .footer__logo{
+    .footer__logo {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    .footer__logo-year{
+    .footer__logo-year {
         margin-left: 3px;
     }
-    .footer__domain{
+    .footer__domain {
         font-size: 28px;
     }
-    .footer__logo img{
+    .footer__logo img {
         width: 130px;
     }
     .footer__links > div {
