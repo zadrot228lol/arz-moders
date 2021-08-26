@@ -64,7 +64,7 @@ header {
 }
 
 .button {
-    display: flex;
+    // display: flex;
     font-family: "PF DinDisplay Pro Medium";
     padding: 23px 32px;
     cursor: pointer;
@@ -111,11 +111,10 @@ main#main-page {
             }
         }
     }
-
     section {
         .section__title {
             font-family: "PF DinDisplay Pro Regular";
-            font-size: 48px;
+            font-size: 42px;
         }
         .section__description {
             margin: 0;
@@ -296,7 +295,6 @@ main#main-page {
     width: 13px;
     background: #80d811;
 }
-
 // footer
 footer {
     background: linear-gradient(112.71deg, #5c97ff 10.51%, rgba(92, 151, 255, 0.58) 103.02%);

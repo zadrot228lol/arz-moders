@@ -54,17 +54,24 @@
   z-index: 50;
 }
 
-@media screen and (max-width: 1342px) {
+@media screen and (max-width: 1370px) {
   .container {
     margin: 0 60px !important;
   }
 }
-@media screen and (max-width: 1105px) {
+@media screen and (max-width: 1130px) {
   .container {
     margin: 0 10px !important;
   }
 }
 @media screen and (max-width: 1024px) {
+  section .section__title {
+    font-size: 28px !important;
+  }
+  section .section__description {
+    font-size: 18px !important;
+  }
+
   .main-page__section_two {
     margin-top: 20px;
   }
@@ -174,7 +181,7 @@
   }
 
   .header__navbar-cabinet {
-    display: none;
+    display: none !important;
   }
 
   .header__adaptive {
@@ -347,7 +354,6 @@ header .header__navbar-element.logo img {
 }
 
 .button {
-  display: flex;
   font-family: "PF DinDisplay Pro Medium";
   padding: 23px 32px;
   cursor: pointer;
@@ -385,7 +391,7 @@ main#main-page .welcome_block .welcome__image img {
 }
 main#main-page section .section__title {
   font-family: "PF DinDisplay Pro Regular";
-  font-size: 48px;
+  font-size: 42px;
 }
 main#main-page section .section__description {
   margin: 0;

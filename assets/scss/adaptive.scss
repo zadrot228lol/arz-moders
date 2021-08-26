@@ -45,13 +45,13 @@
     z-index: 50;
 }
 
-@media screen and (max-width: 1342px) { // маленькие пк
+@media screen and (max-width: 1370px) { // маленькие пк
     .container{
         margin: 0 60px !important;
     }
 }
 
-@media screen and (max-width: 1105px) { // маленькие пк
+@media screen and (max-width: 1130px) { // маленькие пк
     .container{
         margin: 0 10px !important;
     }
@@ -59,6 +59,14 @@
 
 
 @media screen and (max-width: 1024px) { // планшеты
+    section {
+        .section__title {
+            font-size: 28px !important;
+        }
+        .section__description {
+            font-size: 18px !important;
+        }
+    }
     .main-page__section_two{
         margin-top: 20px;
     }
@@ -165,7 +173,7 @@
 
 
     .header__navbar-cabinet {
-        display: none;
+        display: none !important;
     }
     .header__adaptive {
         display: block !important;
