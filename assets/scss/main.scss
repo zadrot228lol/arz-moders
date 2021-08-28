@@ -8,6 +8,9 @@ body {
     margin: 0;
     padding: 0;
     font-family: "PF DinDisplay Pro Regular";
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 h1,
@@ -30,7 +33,14 @@ a {
     text-decoration: none;
 }
 
+main {
+    flex: 1 0 auto;
+}
+footer {
+    flex: 0 0 auto;
+}
 header {
+    flex: 0 0 auto;
     padding-top: 30px;
     .navbar {
         font-family: "PF DinDisplay Pro Medium";
@@ -79,9 +89,9 @@ header {
         #5c97ff 16.6%,
         rgba(92, 151, 255, 0.78) 77.05%
     );
-    box-shadow: -9px 9px 35px rgba(92, 151, 255, 0.30);
+    box-shadow: -9px 9px 35px rgba(92, 151, 255, 0.3);
     border-radius: 23px;
-    &:hover{
+    &:hover {
         box-shadow: -9px 9px 35px rgba(92, 151, 255, 0.77);
     }
     .header__navbar-icon {
@@ -89,6 +99,7 @@ header {
     }
 }
 
+// Main Page
 main#main-page {
     .welcome_block {
         display: flex;
@@ -267,6 +278,8 @@ main#main-page {
         .launcher__block {
             display: flex;
             align-items: center;
+            justify-content: center;
+            margin-right: 200px;
             .launcher__block-image img {
                 width: 700px;
                 margin-bottom: -200px;
@@ -289,11 +302,72 @@ main#main-page {
     }
 }
 
+.d-flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
 .icon_online {
     height: 13px;
     border-radius: 40px;
     width: 13px;
     background: #80d811;
+}
+
+// Moderator Panel Page
+main#moder-page {
+    .moder-page__person img{
+        position: absolute;
+        right: 12%;
+        margin-top: -120px;
+        z-index: -1;
+        width: 50%;
+    }
+    margin-top: 120px;
+    font-family: "PF DinDisplay Pro Medium";
+    .moder__container-login {       
+        font-size: 32px;
+    }
+    .moder__container-out_button {
+        padding: 6px 18px;
+        font-size: 24px;
+        cursor: pointer;
+        z-index: 3;
+    }
+    .moder__container {
+        display: grid;
+        grid-template-columns: repeat(1, 0.8fr);
+        > div:first-child{
+            width: 65%;
+            margin-top: 0px;
+        }
+    }
+    .moder__container-block.moder__container-block_line{
+        > div{
+            border-bottom: 1px solid #fff;
+        }
+    }
+    .moder__container-block {
+        margin-top: 69px;
+        background: linear-gradient(94.38deg, #5c97ff 16.59%, rgba(92, 151, 255, 0.78) 77.05%);
+        border-radius: 20px;
+        color: white;
+        padding: 20px;
+        > div{
+            display: flex;
+            font-size: 20px;
+            justify-content: space-between;
+            margin-bottom: 13px;
+            margin-top: 13px;
+        }
+    }
 }
 // footer
 footer {

@@ -45,20 +45,39 @@
     z-index: 50;
 }
 
-@media screen and (max-width: 1370px) { // маленькие пк
-    .container{
+@media screen and (max-width: 1370px) {
+    // маленькие пк
+    main#moder-page {
+        .moder__container {
+            justify-content: center;
+            grid-template-columns: repeat(1, 1fr) !important;
+            > div {
+                &:first-child {
+                    width: 100% !important;
+                }
+                &:last-child {
+                    margin-bottom: 80px;
+                }
+            }
+        }
+        .moder-page__person img {
+            display: none !important;
+        }
+    }
+    .container {
         margin: 0 60px !important;
     }
 }
 
-@media screen and (max-width: 1130px) { // маленькие пк
-    .container{
+@media screen and (max-width: 1130px) {
+    // маленькие пк
+    .container {
         margin: 0 10px !important;
     }
 }
 
-
-@media screen and (max-width: 1024px) { // планшеты
+@media screen and (max-width: 1024px) {
+    // планшеты
     section {
         .section__title {
             font-size: 28px !important;
@@ -67,28 +86,28 @@
             font-size: 18px !important;
         }
     }
-    .main-page__section_two{
+    .main-page__section_two {
         margin-top: 20px;
     }
-    .slider > a:first-child{
+    .slider > a:first-child {
         display: flex !important;
     }
     .slider > a {
         display: none !important;
     }
-    section.main-page__section-three{
+    section.main-page__section-three {
         padding: 15px 0 !important;
     }
-    .mobile__launcher__block{
+    .mobile__launcher__block {
         display: block !important;
     }
     footer {
         margin-top: 0 !important;
     }
-    .launcher__block{
+    .launcher__block {
         display: none !important;
     }
-    .slider{
+    .slider {
         display: grid !important;
         > .slider__item {
             width: 100% !important;
@@ -96,7 +115,7 @@
             margin-bottom: 20px;
         }
     }
-    .slider__nav{
+    .slider__nav {
         width: 100% !important;
         justify-content: space-evenly !important;
     }
@@ -108,10 +127,10 @@
         background: #5c97ff;
     }
 
-    header.header__adaptive-active{
-        .navbar{
+    header.header__adaptive-active {
+        .navbar {
             align-items: flex-start;
-            .header__adaptive-burger{
+            .header__adaptive-burger {
                 margin-top: 10px;
             }
         }
@@ -141,14 +160,13 @@
         }
     }
 
-    
     .header__navbar-element.logo img.logo_adaptive {
         display: none !important;
     }
-    
+
     .header__navbar-block_links {
         display: none !important;
-        > div{
+        > div {
             margin-bottom: 10px;
         }
         .header__navbar-link {
@@ -168,9 +186,8 @@
 
     .welcome__image img {
         width: 500px !important;
-        margin-right: 0 !important; 
+        margin-right: 0 !important;
     }
-
 
     .header__navbar-cabinet {
         display: none !important;
@@ -180,11 +197,21 @@
     }
 }
 
-
-
-
-@media screen and (max-width: 600px) { // мобилы
-    .slider > a:first-child{
+@media screen and (max-width: 600px) {
+    // мобилы
+    .moder__container-block {
+        > div {
+            align-items: center;
+            font-size: 18px !important;
+        }
+    }
+    .moder__container-login {
+        font-size: 20px !important;
+    }
+    .footer__logo div {
+        display: none !important;
+    }
+    .slider > a:first-child {
         display: flex !important;
     }
     .slider > a {
@@ -198,13 +225,13 @@
         }
     }
 
-    section.main-page__section-three{
+    section.main-page__section-three {
         padding: 15px 0 !important;
     }
-    .mobile__launcher__block{
+    .mobile__launcher__block {
         display: block !important;
     }
-    .launcher__block{
+    .launcher__block {
         display: none !important;
     }
     .container {
@@ -215,10 +242,10 @@
         background: #5c97ff;
     }
 
-    header.header__adaptive-active{
-        .navbar{
+    header.header__adaptive-active {
+        .navbar {
             align-items: flex-start;
-            .header__adaptive-burger{
+            .header__adaptive-burger {
                 margin-top: 10px;
             }
         }
@@ -248,14 +275,13 @@
         }
     }
 
-    
     .header__navbar-element.logo img.logo_adaptive {
         display: none !important;
     }
-    
+
     .header__navbar-block_links {
         display: none !important;
-        > div{
+        > div {
             margin-bottom: 10px;
         }
         .header__navbar-link {
@@ -276,7 +302,6 @@
     .welcome__image {
         display: none;
     }
-
 
     .header__navbar-cabinet {
         display: none;
