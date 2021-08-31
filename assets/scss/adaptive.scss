@@ -45,9 +45,9 @@
     z-index: 50;
 }
 
-@media screen and (max-width: 1370px) {
+@media screen and (max-width: 1568px) {
     // маленькие пк
-    main#admin-page{
+    main#admin-page {
         .admin__container-block-info {
             width: 100% !important;
         }
@@ -69,7 +69,7 @@
             display: none !important;
         }
     }
-    main#admin-page{
+    main#admin-page {
         .admin__container {
             justify-content: center;
             grid-template-columns: repeat(1, 1fr) !important;
@@ -221,22 +221,14 @@
 
 @media screen and (max-width: 700px) {
     // очень маленькие планшеты
-    main#main-page{
-        .welcome__image{
+    main#main-page {
+        .welcome__image {
             display: none !important;
         }
     }
 }
 
-@media screen and (max-width: 670px) {
-    main#admin-page{
-        .admin__container-block-info{
-            display: block !important;
-        }
-    }
-}
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 662px) {
     // мобилы
     .cabinet__container-block {
         > div {
@@ -247,31 +239,34 @@
     .cabinet__container-login {
         font-size: 20px !important;
     }
-    main#admin-page{
+    main#admin-page {
         .admin__container-block {
             > div {
                 align-items: center;
-                font-size: 16.5px !important;
+                font-size: 16.5px;
             }
+        }
+        .admin__container-block-info{
+            display: block !important;
         }
         .admin__container-login {
             font-size: 20px !important;
         }
-        .admin__container-button{
+        .admin__container-button {
             font-size: 16px !important;
         }
-        .admin__container{
-            .user-info-block{
+        .admin__container {
+            .user-info-block {
                 display: block;
-                .admin__container-login{
+                .admin__container-login {
                     margin-bottom: 5px;
                 }
             }
         }
-        .admin__container-block-info-element{
+        .admin__container-block-info-element {
             padding: 10px !important;
         }
-        .admin__container-block_value{
+        .admin__container-block_value {
             font-size: 90px !important;
         }
     }
@@ -375,5 +370,13 @@
     }
     .header__adaptive {
         display: block !important;
+    }
+}
+
+@media screen and (max-width: 318px){
+    .admin__container-block{
+        > div{
+            font-size: 15px !important;
+        }
     }
 }

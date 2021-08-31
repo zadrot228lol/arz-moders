@@ -54,7 +54,7 @@
   z-index: 50;
 }
 
-@media screen and (max-width: 1370px) {
+@media screen and (max-width: 1568px) {
   main#admin-page .admin__container-block-info {
     width: 100% !important;
   }
@@ -225,7 +225,7 @@
     display: none !important;
   }
 }
-@media screen and (max-width: 610px) {
+@media screen and (max-width: 662px) {
   .cabinet__container-block > div {
     align-items: center;
     font-size: 18px !important;
@@ -237,7 +237,10 @@
 
   main#admin-page .admin__container-block > div {
     align-items: center;
-    font-size: 16.5px !important;
+    font-size: 16.5px;
+  }
+  main#admin-page .admin__container-block-info {
+    display: block !important;
   }
   main#admin-page .admin__container-login {
     font-size: 20px !important;
@@ -361,6 +364,11 @@
 
   .header__adaptive {
     display: block !important;
+  }
+}
+@media screen and (max-width: 318px) {
+  .admin__container-block > div {
+    font-size: 15px !important;
   }
 }
 .container {
